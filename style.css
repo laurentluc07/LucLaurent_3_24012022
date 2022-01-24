@@ -1,0 +1,98 @@
+/* ! minireset.css v0.0.6 | Licence MIT | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+bouton, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 10px #999;
+  z-index: 20;
+  position: relative;
+}
+.menu img {
+  width: 170px;
+  height: 30px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+  height: 40px;
+  font-size: 14px;
+  padding: 1.25rem 1rem;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+.localisation__texte {
+  font-weight: 500;
+}
+.localisation__icone {
+  padding-right: 16px;
+}
+
+.explore {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+.explore__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.explore__subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */
