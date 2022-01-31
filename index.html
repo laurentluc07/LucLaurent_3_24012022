@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oh My Food</title>
   <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -92,17 +92,20 @@
         </div>
 
         <div class="restaurants__card">
-          <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="restaurants__card__images">
-          <!-- <span class="restaurants__new"></span> -->
-          <footer class="restaurants__infos">
-            <div class="restaurants__content">
-              <h2 class="restaurants__name">À la française</h2>
-              <p class="restaurants__subtitle">Cité Rouge</p>
-            </div>
-            <div class="restaurants__button wishlist__btn">
-              <i class="far fa-heart restaurants__wishlist"></i>
-            </div>
-          </footer>
+          <a class="restaurants__navigation" href="./a-la-francaise.html">
+            <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="restaurants__card__images">
+            <!-- <span class="restaurants__new"></span> -->
+            <footer class="restaurants__infos">
+              <div class="restaurants__content">
+                <h2 class="restaurants__name">À la française</h2>
+                <p class="restaurants__subtitle">Cité Rouge</p>
+              </div>
+              <div class="restaurants__button wishlist__btn">
+                <i class="far fa-heart restaurants__wishlist"></i>
+              </div>
+            </footer>
+
+          </a>
         </div>
 
         <div class="restaurants__card">
@@ -123,6 +126,30 @@
         </div>
       </div>
     </section>
+
+  <footer class="footer">
+    <span class="footer__logo">ohmyfood</span>
+    <ul class="footer__list-ul">
+      <li class="footer__list-li">
+        <a class="footer__link" href="#">
+          <i class="footer__icon fas fa-utensils"></i>
+          Proposer un restaurant
+        </a>
+      </li>
+      <li class="footer__list-li">
+        <a class="footer__link" href="#">
+          <i class="footer__icon fas fa-hands-helping"></i>
+          Devenir partenaire
+        </a>
+      </li>
+      <li class="footer__list-li">
+        <a class="footer__link" href="#">Mentions légales</a>
+      </li>
+      <li class="footer__list-li">
+        <a class="footer__link" href="#">Contact</a>
+      </li>
+    </ul>
+  </footer>
 
   </main>
 </body>
