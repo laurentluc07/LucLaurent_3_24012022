@@ -58,6 +58,24 @@ td, th {
   height: 30px;
 }
 
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.header-menu__arrow {
+  position: absolute;
+  left: 2rem;
+  top: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  font-size: 1.2rem;
+  color: black;
+}
+
 .footer {
   background-color: #353535;
   display: flex;
