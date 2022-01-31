@@ -3,6 +3,12 @@
   max-height: 32rem;
   width: 100%;
   object-fit: cover;
+  &__enchantee {
+    object-fit: cover;
+    max-height: 28rem;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .details {
@@ -11,6 +17,14 @@
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+
+  &__enchantee {
+    margin-top: -8rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+  }
 
   &__header {
     padding: 1rem 2rem 0 1rem;
@@ -22,59 +36,6 @@
   &__title {
     font-family: "Shrikhand", "cursive";
     margin: 1rem 0;
-  }
-
-  &__button {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    cursor: pointer;
-    position: relative;
-    background-color: black;
-
-    &:hover::before {
-      opacity: 1;
-    }
-
-    &::before {
-      opacity: 0;
-      transition: 0.5s;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background:linear-gradient(0deg,#9356DC 0%,#FF79DA 100%);
-    }
-  }
-
-  &__wishlist {
-    transition-duration: .25s;
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    mix-blend-mode: lighten;
-    border: hidden;
-  }
-
-  &__button:hover {
-    .details__wishlist {
-      &--noBg {
-        opacity: 0;
-      }
-    }
   }
 }
 

@@ -120,9 +120,22 @@ td, th {
   width: 100%;
   object-fit: cover;
 }
+.restaurants-details-images__enchantee {
+  object-fit: cover;
+  max-height: 28rem;
+  max-width: 100%;
+  width: 100%;
+}
 
 .details {
   margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+}
+.details__enchantee {
+  margin-top: -8rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
@@ -137,50 +150,6 @@ td, th {
 .details__title {
   font-family: "Shrikhand", "cursive";
   margin: 1rem 0;
-}
-.details__button {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  background-color: black;
-}
-.details__button:hover::before {
-  opacity: 1;
-}
-.details__button::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-}
-.details__wishlist {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
-  border: hidden;
-}
-.details__button:hover .details__wishlist--noBg {
-  opacity: 0;
 }
 
 .sublevelsmenus {
@@ -266,6 +235,38 @@ td, th {
   border-radius: 2rem;
   background: #ff79da;
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+}
+
+.fa-heart {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.checkbox-heart input[type=checkbox], .checkbox-heart .check {
+  display: none;
+}
+
+.checkbox-heart input[type=checkbox]:checked ~ .check {
+  display: inline-block;
+}
+
+.checkbox-heart input[type=checkbox]:checked ~ .uncheck {
+  display: none;
+}
+
+.uncheck {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.check {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0px;
 }
 
 body {
@@ -440,21 +441,11 @@ body {
   margin: 0;
   margin-bottom: 0.25rem;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 .restaurants__subtitle {
   margin: 0;
   font-weight: lighter;
-}
-.restaurants__button {
-  background-color: white !important;
-  border: hidden;
-}
-.restaurants__button:before {
-  outline: none;
-}
-.restaurants__button:focus {
-  background-color: yellow;
-  outline: blue auto 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
