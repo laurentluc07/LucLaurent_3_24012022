@@ -215,6 +215,35 @@ td, th {
   align-items: flex-end;
   padding-right: 0.5rem;
 }
+.item__confirmation {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.item:hover .item__confirmation {
+  margin-right: -1rem;
+}
+.item__divIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.item:hover .item__divIcon {
+  transform: rotate(0);
+}
+.item__icon {
+  color: #99E2D0;
+}
 
 .command {
   display: flex;
@@ -340,13 +369,17 @@ body {
   border-radius: 1rem;
   background-color: #F6F6F6;
 }
-.operation__card .operation__degustation {
-  display: flex;
-  align-items: center;
-  border-radius: 1rem;
+.operation__card:hover {
   background-color: #F5EDFF;
-  height: 100%;
-  width: 100%;
+  color: #9356DC;
+}
+.operation__card__icone {
+  padding-right: 1rem;
+  width: 40px;
+  color: #7E7E7E;
+}
+.operation__card__icone:hover {
+  color: #9356DC;
 }
 .operation__number {
   position: absolute;
@@ -365,16 +398,6 @@ body {
 .operation__explain {
   display: flex;
   padding-left: 2rem;
-}
-.operation__explain .mobile__icone, .operation__explain .list__icone, .operation__explain .store__icone {
-  padding-right: 1rem;
-  width: 40px;
-}
-.operation__explain .mobile__icone, .operation__explain .list__icone {
-  color: #7E7E7E;
-}
-.operation__explain .store__icone {
-  color: #9356DC;
 }
 .operation__text {
   font-size: 14px;

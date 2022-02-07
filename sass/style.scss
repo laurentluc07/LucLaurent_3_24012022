@@ -84,15 +84,21 @@ body {
     margin: 1rem 0rem 1rem 1rem;
     border-radius: 1rem;
     background-color: #F6F6F6;
-    .operation__degustation {
-      display: flex;
-      align-items: center;
-      border-radius: 1rem;
+    &:hover {
       background-color: #F5EDFF;
-      height: 100%;
-      width: 100%;
+      color: #9356DC;
+    }
+    &__icone {
+      padding-right: 1rem;
+      width: 40px;
+      color: #7E7E7E;
+
+      &:hover {
+        color: #9356DC;
+      }
     }
   }
+
   &__number {
     position: absolute;
     display: flex;
@@ -110,17 +116,6 @@ body {
   &__explain {
     display: flex;
     padding-left: 2rem;
-
-    .mobile__icone, .list__icone, .store__icone {
-      padding-right: 1rem;
-      width: 40px;
-    }
-    .mobile__icone, .list__icone {
-      color: #7E7E7E;
-    }
-    .store__icone {
-      color: #9356DC;
-    }
   }
   &__text {
     font-size: 14px;
