@@ -106,6 +106,41 @@
     align-items: flex-end;
     padding-right: 0.5rem;
   }
+
+  &__confirmation {
+    background-color: #99E2D0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__confirmation {
+    margin-right: -1rem;
+  }
+
+  &__divIcon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100px;
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+
+  }
+
+  &:hover &__divIcon {
+    transform: rotate(0);
+  }
+
+  &__icon {
+    color: #99E2D0;
+  }
 }
 
 .command {
