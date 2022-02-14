@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+@import 'libs/reset.scss';
+@import 'variables';
+@import 'base-component';
+// @import 'libs/normalize';
+@import 'navbar-footer';
+@import 'restaurants-menu';
+@import 'heart';
+@import 'btnheart';
+@import 'animation.scss';
+@import 'loader/poele';
+@import 'loader/windows';
+
+
+.btn_heart{
+  @include btnheart;
+}
