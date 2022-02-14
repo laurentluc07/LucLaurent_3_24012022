@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="spinner-container">
+  <!-- <div class="spinner-container">
     <div class="spinner">
       <div class="bubble bubble--1"></div>
       <div class="bubble bubble--2"></div>
@@ -26,15 +26,15 @@
         <div class="stove--base"></div>
       </div>
     </div>
-  </div>
-
-  <!-- <div class='loader'>
-    <div class='circle'></div>
-    <div class='circle'></div>
-    <div class='circle'></div>
-    <div class='circle'></div>
-    <div class='circle'></div>
   </div> -->
+
+  <div class='loader'>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+  </div>
 
   <header>
     <div class="menu">
@@ -44,7 +44,7 @@
   <main>
     <section class="localisation">
       <i class="fas fa-map-marker-alt localisation__icone"></i>
-      <span class="localisation__texte">Paris, Belleville</span>
+      <h2 class="localisation__texte">Paris, Belleville</h2>
     </section>
 
     <section class="explore">
@@ -61,34 +61,36 @@
 
     <section class="operation">
       <h2 class="operation__title">Fonctionnement</h2>
-      <div class="operation__card">
-        <p class="operation__number">1</p>
-        <div class="operation__explain">
-          <i class="fas fa-mobile-alt operation__card__icone"></i>
-          <p class="operation__text">Choisissez un restaurant</p>
-        </div>
-      </div>
-      <div class="operation__card">
-        <p class="operation__number">2</p>
-        <div class="operation__explain">
-          <i class="fas fa-list-ul operation__card__icone"></i>
-          <p class="operation__text">Composez votre menu</p>
-        </div>
-      </div>
-      <div class="operation__card">
-        <!-- <div class="operation__degustation"> -->
-          <p class="operation__number">3</p>
+      <div class="operation__card-container">
+        <div class="operation__card">
+          <p class="operation__number">1</p>
           <div class="operation__explain">
-            <i class="fas fa-store operation__card__icone"></i>
-            <p class="operation__text">Dégustez au restaurant</p>
+            <i class="fas fa-mobile-alt operation__card__icone"></i>
+            <p class="operation__text">Choisissez un restaurant</p>
           </div>
-        <!-- </div> -->
+        </div>
+        <div class="operation__card">
+          <p class="operation__number">2</p>
+          <div class="operation__explain">
+            <i class="fas fa-list-ul operation__card__icone"></i>
+            <p class="operation__text">Composez votre menu</p>
+          </div>
+        </div>
+        <div class="operation__card">
+          <!-- <div class="operation__degustation"> -->
+            <p class="operation__number">3</p>
+            <div class="operation__explain">
+              <i class="fas fa-store operation__card__icone"></i>
+              <p class="operation__text">Dégustez au restaurant</p>
+            </div>
+          <!-- </div> -->
+        </div>
       </div>
     </section>
 
     <section class="restaurants">
-      <div class="restaurant__cards">
-        <h1 class="restaurants__title">Restaurants</h1>
+      <h1 class="restaurants__title">Restaurants</h1>
+      <div class="restaurants__cards">
         <div class="restaurants__card">
           <a class="restaurants__navigation" href="./la-palette-du-goût.html">
             <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="restaurants__card__images">
