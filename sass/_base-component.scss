@@ -16,6 +16,7 @@ body {
 
   &__texte {
     font-weight: 500;
+    font-size: 16px;
   }
 
   &__icone {
@@ -68,6 +69,13 @@ body {
     font-weight: bold;
   }
 
+  &__card-container {
+    @media (min-width:64rem) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__card {
     position: relative;
     height: 60px;
@@ -86,6 +94,12 @@ body {
       padding-right: 1rem;
       width: 40px;
       color: #7E7E7E;
+      @media (min-width:64rem) {
+        font-size: 18px;
+      }
+    }
+    @media (min-width:64rem) {
+      width: 370px;
     }
   }
 
@@ -110,6 +124,9 @@ body {
   &__text {
     font-size: 14px;
     font-weight: 500;
+    @media (min-width:64rem) {
+      font-size: 16px;
+    }
   }
 }
 
