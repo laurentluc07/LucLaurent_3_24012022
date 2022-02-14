@@ -29,7 +29,7 @@
       width: 5px;
       height: 5px;
       border-radius: 5px;
-      background: #9356DC; /* Pick a color */
+      background: $primary-color; /* Pick a color */
     }
 
     &:nth-child(2) {  animation-delay: 240ms; }

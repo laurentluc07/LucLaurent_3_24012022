@@ -9,7 +9,7 @@
 
 // Poêle Loader
 
-  $bg-bubble: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(214,108,219,1) 39%, rgba(171,94,220,1) 85%, rgba(155,89,220,1) 100%);
+  $bg-bubble: linear-gradient(173deg, $secondary-color 0%, rgba(214,108,219,1) 39%, rgba(171,94,220,1) 85%, $primary-color 100%);
   $bubble-timing: 2000ms;
   $nb-bubble:6;
   $bubble-delay: $bubble-timing / $nb-bubble;
@@ -166,4 +166,11 @@
 
   76% { transform:rotate(945deg); opacity: 0; }
   100% { transform:rotate(945deg); opacity: 0; }
+}
+
+
+@keyframes itemFadeIn {
+  0% {
+    transform: translateY(2rem);
+  }
 }

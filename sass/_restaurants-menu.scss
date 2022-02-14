@@ -64,7 +64,7 @@
     content: "";
     width: 3rem;
     height: 0.20rem;
-    background-color: #99e2d0;
+    background-color: $tertiaire-color;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,6 +82,9 @@
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  animation: itemFadeIn .5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 
   &__header {
     flex: 1;
@@ -108,7 +111,7 @@
   }
 
   &__confirmation {
-    background-color: #99E2D0;
+    background-color: $tertiaire-color;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
     display:flex;
@@ -139,7 +142,7 @@
   }
 
   &__icon {
-    color: #99E2D0;
+    color: $tertiaire-color;
   }
 }
 
@@ -161,7 +164,7 @@
     color: #FFFFFF;
     font-weight: 400;
     border-radius: 2rem;
-    background: rgb(255,121,218);
-    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    background: $secondary-color;
+    background: linear-gradient(175deg, $secondary-color 0%, $primary-color 100%);
   }
 }
