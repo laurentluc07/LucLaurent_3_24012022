@@ -1,0 +1,26 @@
+@mixin btnheart {
+  position: relative;
+  &__off {
+    position: absolute;
+    font-size: 24px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  &__on {
+    position: absolute;
+    opacity: 0;
+    transform: translatez(0px);
+    font-size: 24px;
+    &:hover {
+      background: $btn-grad;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition-delay: 200ms;
+      transition-duration: 800ms;
+      transform: translatez(34px);
+      opacity: 1;
+    }
+  }
+}

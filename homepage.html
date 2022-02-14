@@ -9,6 +9,33 @@
   <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <div class="spinner-container">
+    <div class="spinner">
+      <div class="bubble bubble--1"></div>
+      <div class="bubble bubble--2"></div>
+      <div class="bubble bubble--4"></div>
+      <div class="bubble bubble--3"></div>
+      <div class="bubble bubble--5"></div>
+      <div class="bubble bubble--6"></div>
+      <div class="aliment aliment--1"></div>
+      <div class="aliment aliment--2"></div>
+      <div class="aliment aliment--3"></div>
+      <div class="stove">
+        <div class="stove--handle"></div>
+        <div class="stove--base"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class='loader'>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+  </div> -->
+
   <header>
     <div class="menu">
       <img src="images/logo/ohmyfood.png" alt="ohmyfood">
@@ -37,7 +64,7 @@
       <div class="operation__card">
         <p class="operation__number">1</p>
         <div class="operation__explain">
-          <i class="fas fa-mobile-alt icone"></i>
+          <i class="fas fa-mobile-alt operation__card__icone"></i>
           <p class="operation__text">Choisissez un restaurant</p>
         </div>
       </div>
@@ -71,11 +98,10 @@
                 <h2 class="restaurants__name">La palette du goût</h2>
                 <p class="restaurants__subtitle">Ménilmontant</p>
               </div>
-              <label class="checkbox-heart">
-                <input type="checkbox">
-                <i class="fas fa-heart uncheck"></i>
-                <i class="fas fa-heart check"></i>
-              </label>
+              <div class="restaurants__heart btn_heart">
+                <i class="fas fa-heart btn_heart__off"></i>
+                <i class="fas fa-heart btn_heart__on"></i>
+              </div>
             </footer>
           </a>
         </div>
@@ -89,11 +115,10 @@
                 <h2 class="restaurants__name">La note enchantée</h2>
                 <p class="restaurants__subtitle">Charonne</p>
               </div>
-              <label class="checkbox-heart">
-                <input type="checkbox">
-                <i class="fas fa-heart uncheck"></i>
-                <i class="fas fa-heart check"></i>
-              </label>
+              <div class="restaurants__heart btn_heart">
+                <i class="fas fa-heart btn_heart__off"></i>
+                <i class="fas fa-heart btn_heart__on"></i>
+              </div>
             </footer>
           </a>
         </div>
@@ -110,11 +135,10 @@
               <!-- <div class="restaurants__button wishlist__btn">
                 <i class="far fa-heart restaurants__wishlist"></i>
               </div> -->
-              <label class="checkbox-heart">
-                <input type="checkbox">
-                <i class="fas fa-heart uncheck"></i>
-                <i class="fas fa-heart check"></i>
-              </label>
+              <div class="restaurants__heart btn_heart">
+                <i class="fas fa-heart btn_heart__off"></i>
+                <i class="fas fa-heart btn_heart__on"></i>
+              </div>
             </footer>
 
           </a>
@@ -129,11 +153,10 @@
                 <h2 class="restaurants__name">Le délice des sens</h2>
                 <p class="restaurants__subtitle">Folie-Méricourt</p>
               </div>
-              <label class="checkbox-heart">
-                <input type="checkbox">
-                <i class="fas fa-heart uncheck"></i>
-                <i class="fas fa-heart check"></i>
-              </label>
+              <div class="restaurants__heart btn_heart">
+                <i class="fas fa-heart btn_heart__off"></i>
+                <i class="fas fa-heart btn_heart__on"></i>
+              </div>
             </footer>
           </a>
         </div>

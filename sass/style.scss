@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 @import 'libs/reset.scss';
+@import 'variables';
 // @import 'libs/normalize';
 @import 'navbar-footer';
 @import 'restaurants-menu';
 @import 'heart';
+@import 'btnheart';
+@import 'animation';
+@import 'loader/poele';
+@import 'loader/windows';
 
 body {
   background-color: #FFFFFF;
@@ -87,15 +92,12 @@ body {
     &:hover {
       background-color: #F5EDFF;
       color: #9356DC;
+      cursor:pointer;
     }
     &__icone {
       padding-right: 1rem;
       width: 40px;
       color: #7E7E7E;
-
-      &:hover {
-        color: #9356DC;
-      }
     }
   }
 
@@ -197,4 +199,16 @@ body {
     margin: 0;
     font-weight: lighter;
   }
+
+  &__heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-size: 30px;
+  }
+}
+
+.btn_heart{
+  @include btnheart;
 }
